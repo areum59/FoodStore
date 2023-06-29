@@ -3,435 +3,453 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>23_한아름_푸드스토어</title>
+    <title>푸드스토어</title>
 
-    <script src="https://kit.fontawesome.com/80a2be1de2.js" crossorigin="anonymous"></script>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="#" type="image/x-icon">
 
-    <link href="css/common.css" rel="stylesheet">
-    <link href="css/sub.css" rel="stylesheet">
-    
-    <script>
-        $(function(){
-          $("#menuicon").click(function(){
-           $(".topmenu2").slideToggle();
-           });
-        });
-        
-        $(window).resize(function(){
-          if(window.innerWidth<=768){
-            $('.topmenu').show();
-          }
-        });
-    </script>
+    <!-- css -->
+    <link rel="stylesheet" href="/static/pc/css/common.css">
+    <link rel="stylesheet" href="/static/pc/css/main.css">
+
+    <!-- fontawesome CDN -->
+    <script src="https://kit.fontawesome.com/20d055f060.js" crossorigin="anonymous"></script>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
-    <header>
-        <a href="#">
-            <h5>지금 가입하고 인기상품 <span>1000point</span> 받아가세요!</h5>
-        </a>
-        <div id="login">
-            <ul>
-                <li><a href="#">회원가입</a></li>
-                <li>|</li>
-                <li><a href="#">로그인</a></li>
-                <li>|</li>
-                <li><a href="#">고객센터</a></li>
-                <li>|</li>
-                <li><a href="#">배송지역 검색</a></li>
-            </ul>
-        </div>
-
-        <div id="top">
-            <a href="main.html" target="_self"><img src="img/logo.jpg" alt="logo"></a>
-
-            <div class="search">
-                <input name="search" placeholder="한 스푼 샐러드">
-                <button type="submit"><i class="fas fa-search"></i></button>
-            </div>
-
-            <nav>
+    <div class="wrap">
+        <!-- header -->
+        <header>
+            <a href="#">
+                <h5>지금 가입하고 인기상품 <span>1000point</span> 받아가세요!</h5>
+            </a>
+            <div id="login">
                 <ul>
-                    <li><a href="main.html" target="_self">전체 카테고리</a></li>
-                    <li><a href="main.html" target="_self">BEST</a></li>
-                    <li><a href="main.html" target="_self">HOT DEAL</a></li>
-                    <li><a href="main.html" target="_self">신상품</a></li>
-                    <li><a href="main.html" target="_self">간편식</a></li>
-                    <li><a href="main.html" target="_self">식단플랜</a></li>
-                    <li><a href="main.html" target="_self">EVENT</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li>|</li>
+                    <li><a href="#">로그인</a></li>
+                    <li>|</li>
+                    <li><a href="#">고객센터</a></li>
+                    <li>|</li>
+                    <li><a href="#">배송지역 검색</a></li>
                 </ul>
-            </nav>
-        </div>
-    </header>
+            </div>
 
-    <main>
-        <div id="submenu">
-            <ul>
-                <li>HOME</li>
-                <li><i class="fas fa-angle-right"></i></li>
-                <li>간편식</li>
-                <li><i class="fas fa-angle-right"></i></li>
-                <li>곤약/면류</li>
-            </ul>
-        </div>
-        <div id="product">
-            <div id="container">
-                <div id="big">
-                    <img src="img/container_big.jpg" alt="" id="cup">
+            <div id="top">
+                <a href="main.html" target="_self"><img src="img/logo.jpg" alt="logo"></a>
+
+                <div class="search">
+                    <input name="search" placeholder="한 스푼 샐러드">
+                    <button type="submit"><i class="fas fa-search"></i></button>
                 </div>
-                <div id="small">
-                <span><i class="fas fa-sort-up"></i></span><br>
-                    <img src="img/container_small1.jpg" class="small">
-                    <img src="img/container_small2.jpg" class="small">
-                    <img src="img/container_small3.jpg" class="small"><br>
-                <span><i class="fas fa-sort-down"></i></span>
+
+                <nav>
+                    <ul>
+                        <li><a href="main.html" target="_self">전체 카테고리</a></li>
+                        <li><a href="main.html" target="_self">BEST</a></li>
+                        <li><a href="main.html" target="_self">HOT DEAL</a></li>
+                        <li><a href="main.html" target="_self">신상품</a></li>
+                        <li><a href="main.html" target="_self">간편식</a></li>
+                        <li><a href="main.html" target="_self">식단플랜</a></li>
+                        <li><a href="main.html" target="_self">EVENT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- contents -->
+        <section class="contents">
+            <div id="submenu">
+                <ul>
+                    <li>HOME</li>
+                    <li><i class="fas fa-angle-right"></i></li>
+                    <li>간편식</li>
+                    <li><i class="fas fa-angle-right"></i></li>
+                    <li>곤약/면류</li>
+                </ul>
+            </div>
+            <div id="product">
+                <div id="container">
+                    <div id="big">
+                        <img src="img/container_big.jpg" alt="" id="cup">
+                    </div>
+                    <div id="small">
+                        <span><i class="fas fa-sort-up"></i></span><br>
+                        <img src="img/container_small1.jpg" class="small">
+                        <img src="img/container_small2.jpg" class="small">
+                        <img src="img/container_small3.jpg" class="small"><br>
+                        <span><i class="fas fa-sort-down"></i></span>
+                    </div>
+                </div>
+
+                <script>
+                    var bigPic = document.querySelector("#cup");
+                    var smallPics = document.querySelectorAll(".small");
+                    for (var i = 0; i < smallPics.length; i++) { smallPics[i].addEventListener("click", chagePic); }
+                    function chagePic() { var newPic = this.src; bigPic.setAttribute("src", newPic); }
+                </script>
+
+                <div id="tablebox">
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <p>국물까지 다 먹어도! 늦은 밤에 먹어도 51kcal</p>
+                                <h3>야식 곤약면 SET<br><span>21,900원</span></h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>적립금</th>
+                            <td>로그인, 옵션 선택 후 확인 가능합니다.</td>
+                        </tr>
+
+                        <tr>
+                            <th>배송방법</th>
+                            <td>업체배송(푸드스토에서 직접 배송)</td>
+                        </tr>
+
+                        <tr>
+                            <th>배송비</th>
+                            <td>무료배송</td>
+                        </tr>
+
+                        <tr>
+                            <th>보관방법</th>
+                            <td>냉장(아이스박스/보냉팩 포장)</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="tablebox2">
+                    <table>
+                        <tr>
+                            <td colspan="2"
+                                style="color:#4b0082; border-top:1px solid #ddd; border-bottom:1px solid #ddd;">지금 결제하시면
+                                5월 9일 출고 됩니다.</td>
+                        </tr>
+                        <tr>
+                            <td>옵션선택</td>
+                            <td>
+                                <select name="select" class="select">
+                                    <option>옵션을 선택해 주세요</option>
+                                    <option>짜장면</option>
+                                    <option>불짬뽕</option>
+                                    <option>소바면</option>
+                                    <option>마라탕면</option>
+                                    <option>물냉면</option>
+                                    <option>비빔면</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>추가구성</td>
+                            <td>
+                                <select name="select" class="select">
+                                    <option>추가 옵션을 선택해 주세요</option>
+                                    <option>일회용 스푼 추가(미선택시 스푼을 빼고 보내드립니다) +0원</option>
+                                    <option>메리란 10팩 +9,700원</option>
+                                    <option>단백질 마늘 바게트 1개입 +1,900원</option>
+                                    <option>곤약 한끼 이온맛 1박스 +9,900원</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2" style="color:#666; font-size:15px; text-align:right;">
+                                총 결제금액 <span style="font-size:22px; font-weight:bold; color:#4b0082;">0원</span></td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <button>구매하기</button>
+                                <button>장바구니</button>
+                                <button>관심상품</button>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
-            
-            <script>
-                var bigPic = document.querySelector("#cup");
-                var smallPics = document.querySelectorAll(".small");
-                for(var i = 0; i < smallPics.length; i++) {smallPics[i].addEventListener("click", chagePic);} 
-                function chagePic() {var newPic=this.src; bigPic.setAttribute("src", newPic);}
-            </script>
-            
-            <div id="tablebox">
+
+            <div id="show">
+                <h4>이 상품을 구매한 고객이 <span style="color:#4b0082;">많이 본 상품</span></h4>
+
+                <div class="showbox">
+                    <a href="#"><img src="img/show1.jpg" alt="show1"></a>
+                    <p>곤약 현미 떡볶이<br><span>3,200원</span></p>
+                </div>
+
+                <div class="showbox">
+                    <a href="#"><img src="img/show2.jpg" alt="show2"></a>
+                    <p>투명피 만두 매콤 오징어<br><span>8,900원</span></p>
+                </div>
+
+                <div class="showbox">
+                    <a href="#"><img src="img/show3.jpg" alt="show3"></a>
+                    <p>배부른 현미떡<br><span>4,000원</span></p>
+                </div>
+
+                <div class="showbox">
+                    <a href="#"><img src="img/show4.jpg" alt="show4"></a>
+                    <p>닭가슴살 어묵바<br><span>1,500원</span></p>
+                </div>
+
+                <div class="showbox">
+                    <a href="#"><img src="img/show5.jpg" alt="show5"></a>
+                    <p>건조 곤약면<br><span>14,900원</span></p>
+                </div>
+            </div>
+
+            <div id="detail">
+                <ul class="detail_tap">
+                    <li><a href="#detail">상품정보</a></li>
+                    <li><a href="#gide">구매가이드</a></li>
+                    <li><a href="#item_review">상품후기</a></li>
+                    <li><a href="#inquiry">상품문의</a></li>
+                </ul>
+                <div id="detail_manual">
+                    <img src="img/detail_page.jpg" alt="상세페이지">
+                </div>
+            </div>
+
+            <div id="gide">
+                <ul class="detail_tap">
+                    <li><a href="#detail">상품정보</a></li>
+                    <li><a href="#gide">구매가이드</a></li>
+                    <li><a href="#item_review">상품후기</a></li>
+                    <li><a href="#inquiry">상품문의</a></li>
+                </ul>
                 <table>
                     <tr>
-                        <td colspan="2">
-                            <p>국물까지 다 먹어도! 늦은 밤에 먹어도 51kcal</p>
-                            <h3>야식 곤약면 SET<br><span>21,900원</span></h3>
+                        <th>고객센터</th>
+                        <td>070-7773-3152&emsp;|&emsp;평일 10:00 ~ 18:00&emsp;|&emsp;점심:12:00~14:00 &emsp;|&emsp;주말,공휴일 휴무
                         </td>
                     </tr>
-                    <tr>
-                        <th>적립금</th>
-                        <td>로그인, 옵션 선택 후 확인 가능합니다.</td>
-                    </tr>
-
                     <tr>
                         <th>배송방법</th>
-                        <td>업체배송(푸드스토에서 직접 배송)</td>
-                    </tr>
-
-                    <tr>
-                        <th>배송비</th>
-                        <td>무료배송</td>
-                    </tr>
-
-                    <tr>
-                        <th>보관방법</th>
-                        <td>냉장(아이스박스/보냉팩 포장)</td>
-                        <td></td>
-                    </tr>
-                </table>
-            </div>
-            <div id="tablebox2">
-                <table>                                      
-                    <tr>
-                        <td colspan="2" style="color:#4b0082; border-top:1px solid #ddd; border-bottom:1px solid #ddd;">지금 결제하시면 5월 9일 출고 됩니다.</td>
+                        <td><span style="font-weight:bold;">ㅇㅇ택배 1988-0509</span></td>
                     </tr>
                     <tr>
-                        <td>옵션선택</td>                    
-                        <td>
-                            <select name="select" class="select">
-                                <option>옵션을 선택해 주세요</option>
-                                <option>짜장면</option>
-                                <option>불짬뽕</option>
-                                <option>소바면</option>
-                                <option>마라탕면</option>
-                                <option>물냉면</option>
-                                <option>비빔면</option>
-                            </select>
-                        </td>
+                        <th>배송기간</th>
+                        <td><span style="font-weight:bold;">15시 이전 입금 완료 시 당일발송</span><br>
+                            ※ 배송준비중으로 변경 시, 냉동식품은 취소/교환/환불 불가 (그 외, 교환/환불 시 교환/반품안내 정책 적용)<br><br>
+                            - 월,화요일은 주문량이 많아 당일 발송이 지연될 수 있습니다<br>
+                            - 도서산간지역 및 공휴일 포함 시, 수령일은 최대 5일까지 소요될 수 있습니다.</td>
                     </tr>
                     <tr>
-                        <td>추가구성</td>                    
-                        <td>
-                            <select name="select" class="select">
-                                <option>추가 옵션을 선택해 주세요</option>
-                                <option>일회용 스푼 추가(미선택시 스푼을 빼고 보내드립니다) +0원</option>
-                                <option>메리란 10팩 +9,700원</option>
-                                <option>단백질 마늘 바게트 1개입 +1,900원</option>
-                                <option>곤약 한끼 이온맛 1박스 +9,900원</option>
-                            </select>
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td colspan="2" style="color:#666; font-size:15px; text-align:right;">
-                        총 결제금액 <span style="font-size:22px; font-weight:bold; color:#4b0082;">0원</span></td>
-                    </tr>
-                    
-                    <tr>
-                        <td colspan="2">
-                            <button>구매하기</button>
-                            <button>장바구니</button>
-                            <button>관심상품</button>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-
-        <div id="show">
-            <h4>이 상품을 구매한 고객이 <span style="color:#4b0082;">많이 본 상품</span></h4>
-                
-            <div class="showbox">
-                <a href="#"><img src="img/show1.jpg" alt="show1"></a>
-                <p>곤약 현미 떡볶이<br><span>3,200원</span></p>
-            </div>  
-                      
-            <div class="showbox">
-                <a href="#"><img src="img/show2.jpg" alt="show2"></a>
-                <p>투명피 만두 매콤 오징어<br><span>8,900원</span></p>
-            </div>  
-                      
-            <div class="showbox">
-                <a href="#"><img src="img/show3.jpg" alt="show3"></a>
-                <p>배부른 현미떡<br><span>4,000원</span></p>
-            </div>  
-                      
-            <div class="showbox">
-                <a href="#"><img src="img/show4.jpg" alt="show4"></a>
-                <p>닭가슴살 어묵바<br><span>1,500원</span></p>
-            </div> 
-                       
-            <div class="showbox">
-                <a href="#"><img src="img/show5.jpg" alt="show5"></a>
-                <p>건조 곤약면<br><span>14,900원</span></p>
-            </div>
-        </div>     
-        
-        <div id="detail">
-            <ul class="detail_tap">
-                <li><a href="#detail">상품정보</a></li>
-                <li><a href="#gide">구매가이드</a></li>
-                <li><a href="#item_review">상품후기</a></li>
-                <li><a href="#inquiry">상품문의</a></li>
-            </ul>
-            <div id="detail_manual">
-                <img src="img/detail_page.jpg" alt="상세페이지">
-            </div>
-        </div> 
-          
-        <div id="gide">
-            <ul class="detail_tap">
-                <li><a href="#detail">상품정보</a></li>
-                <li><a href="#gide">구매가이드</a></li>
-                <li><a href="#item_review">상품후기</a></li>
-                <li><a href="#inquiry">상품문의</a></li>
-            </ul>
-            <table>
-                <tr>
-                    <th>고객센터</th>
-                    <td>070-7773-3152&emsp;|&emsp;평일 10:00 ~ 18:00&emsp;|&emsp;점심:12:00~14:00 &emsp;|&emsp;주말,공휴일 휴무</td>
-                </tr>
-                <tr>
-                    <th>배송방법</th>
-                    <td><span style="font-weight:bold;">ㅇㅇ택배 1988-0509</span></td>
-                </tr>
-                <tr>
-                    <th>배송기간</th>
-                    <td><span style="font-weight:bold;">15시 이전 입금 완료 시 당일발송</span><br>
-                    ※ 배송준비중으로 변경 시, 냉동식품은 취소/교환/환불 불가 (그 외, 교환/환불 시 교환/반품안내 정책 적용)<br><br>
-                    - 월,화요일은 주문량이 많아 당일 발송이 지연될 수 있습니다<br>
-                    - 도서산간지역 및 공휴일 포함 시, 수령일은 최대 5일까지 소요될 수 있습니다.</td>
-                </tr>
-                <tr>
-                    <th>주의사항</th>
-                    <td><span style="font-weight:bold;">[공통사항]</span><br>
-                        <span style="color:red;">- 주문 상태가 "배송준비중"일 경우, "주소변경 및 주문취소가 불가"합니다.<br>
-                            - "희망배송일" 설정은 냉동식품인 "포켓도시락"에만 해당됩니다.</span><br>
+                        <th>주의사항</th>
+                        <td><span style="font-weight:bold;">[공통사항]</span><br>
+                            <span style="color:red;">- 주문 상태가 "배송준비중"일 경우, "주소변경 및 주문취소가 불가"합니다.<br>
+                                - "희망배송일" 설정은 냉동식품인 "포켓도시락"에만 해당됩니다.</span><br>
                             ※희망배송일 : 상품을 수령 받고 싶은 날짜(=택배수령일)<br>
-                        - 배송지 오류 및 연락 불가로 인하여 반송될 경우 택배비는 고객님의 부담이니 꼭 주소,연락처 확인 부탁드립니다. (가공·건강식품에 한함. 냉동식품은 하단 내용 참조)<br>
-                        - 냉동식품과 가공·건강식품을 함께 구매 시, 동일하게 롯데택배로 출고되지만 각각 출고지가 상이하여 분리배송 될 수 있는 점 양해부탁드립니다.<br>
-                        - 배송비 : 3,000원 (5만원 이상 구매 시 무료배송 / 도서산간지역 추가 배송비 발생)<br>
-                        - 송장 조회는 다음날 이후로 가능하며, 제품 수령 시각 설정은 절대 불가합니다.<br>
-                        (택배사 또는 지역 택배기사로 문의 후 조율 부탁드립니다.)<br>
-                        ※택배사 사정에 따라서 오후 6시 이후에 제품을 받으실 수 있음을 양해 부탁드립니다.<br>
-                        ※전자상거래 분쟁과 관련하여 고객의 피해구제신청이 있는 경우에는 공정거래위원회 또는 시, 도지사가 의뢰하는 분쟁조정기관의 조정에 따를수 있습니다.<br>
-                        ※거래에 관한 약관의 내용은 홈페이지 하단의 이용약관을 통해 확인 가능합니다.<br>
-                        ※미성년자가 물품을 구매하는 경우, 법정대리인이 동의하지 않으면 미성년자 본인 또는 법정대리인이 구매를 취소할 수 있습니다.<br><br>
-                        <span style="font-weight:bold;">[냉동식품]</span><br>
-                        <span style="color:red;">- 아래와 같이 고객님의 과실에 해당하는 경우, 교환/반품/환불 불가</span><br>
-                        ※소비자보호법에 관한 법률(전자상거래법) 제 17조 3항에 의하여 불가합니다<br>
-                        <span style="color:red;">1. 토요일에 수령불가한 경우, 희망배송일 미지정 또는 배송메세지에 "주말수령불가" 미기입 시 (예: 회사, 여행 etc.)</span><br>
-                        ※배송지가 회사인 경우, 주소만으로 회사임을 구분할 수 없으므로 반드시 희망배송일 또는 주문메세지에 꼭 남겨주세요<br>
-                        <span style="color:red;">2. 안심번호 사용에 의하여 연락(문자 포함) 수신 불가 또는 택배 기사님과의 연락 불가로 수령불가/반송/훼손 시</span><br>
-                        ※안심번호 사용 시, 문자 수신이 불가하여 택배 기사님의 연락이 전달되지 않을 수 있으며, 그에 대한 책임은 고객님께 있습니다.<br><br>
-                        - 제주/도서/산간지역 : 금요일 출고 불가 (냉동 식품의 경우, 여름에는 특히 해동될 수 있으므로 금요일에 출고되지 않습니다_토요일 수령X)<br>
-                        - 군부대는 부대 특성상 배송이 지연 되기 때문에 냉동식품 주문이 불가합니다.
-                    </td>
-                </tr>
-            </table>
-        </div>        
-        
-        <div id="item_review">
-            <ul class="detail_tap">
-                <li><a href="#detail">상품정보</a></li>
-                <li><a href="#gide">구매가이드</a></li>
-                <li><a href="#item_review">상품후기</a></li>
-                <li><a href="#inquiry">상품문의</a></li>
-            </ul>
-            <div id="reviewbox">
-               <table>
-                   <tr>
-                       <td>등록된 리뷰가 아직 없습니다.</td>
-                   </tr>
-               </table>
-                <textarea rows="5" cols="50"></textarea>
-                <button><i class="fas fa-camera-retro"> + 사진추가</i></button>
-                <select class="star">
-                    <option>아주 좋아요</option>
-                </select>
-                <button><i class="fas fa-check-circle"> 리뷰 등록하기</i></button>
+                            - 배송지 오류 및 연락 불가로 인하여 반송될 경우 택배비는 고객님의 부담이니 꼭 주소,연락처 확인 부탁드립니다. (가공·건강식품에 한함. 냉동식품은 하단 내용
+                            참조)<br>
+                            - 냉동식품과 가공·건강식품을 함께 구매 시, 동일하게 롯데택배로 출고되지만 각각 출고지가 상이하여 분리배송 될 수 있는 점 양해부탁드립니다.<br>
+                            - 배송비 : 3,000원 (5만원 이상 구매 시 무료배송 / 도서산간지역 추가 배송비 발생)<br>
+                            - 송장 조회는 다음날 이후로 가능하며, 제품 수령 시각 설정은 절대 불가합니다.<br>
+                            (택배사 또는 지역 택배기사로 문의 후 조율 부탁드립니다.)<br>
+                            ※택배사 사정에 따라서 오후 6시 이후에 제품을 받으실 수 있음을 양해 부탁드립니다.<br>
+                            ※전자상거래 분쟁과 관련하여 고객의 피해구제신청이 있는 경우에는 공정거래위원회 또는 시, 도지사가 의뢰하는 분쟁조정기관의 조정에 따를수 있습니다.<br>
+                            ※거래에 관한 약관의 내용은 홈페이지 하단의 이용약관을 통해 확인 가능합니다.<br>
+                            ※미성년자가 물품을 구매하는 경우, 법정대리인이 동의하지 않으면 미성년자 본인 또는 법정대리인이 구매를 취소할 수 있습니다.<br><br>
+                            <span style="font-weight:bold;">[냉동식품]</span><br>
+                            <span style="color:red;">- 아래와 같이 고객님의 과실에 해당하는 경우, 교환/반품/환불 불가</span><br>
+                            ※소비자보호법에 관한 법률(전자상거래법) 제 17조 3항에 의하여 불가합니다<br>
+                            <span style="color:red;">1. 토요일에 수령불가한 경우, 희망배송일 미지정 또는 배송메세지에 "주말수령불가" 미기입 시 (예: 회사, 여행
+                                etc.)</span><br>
+                            ※배송지가 회사인 경우, 주소만으로 회사임을 구분할 수 없으므로 반드시 희망배송일 또는 주문메세지에 꼭 남겨주세요<br>
+                            <span style="color:red;">2. 안심번호 사용에 의하여 연락(문자 포함) 수신 불가 또는 택배 기사님과의 연락 불가로 수령불가/반송/훼손
+                                시</span><br>
+                            ※안심번호 사용 시, 문자 수신이 불가하여 택배 기사님의 연락이 전달되지 않을 수 있으며, 그에 대한 책임은 고객님께 있습니다.<br><br>
+                            - 제주/도서/산간지역 : 금요일 출고 불가 (냉동 식품의 경우, 여름에는 특히 해동될 수 있으므로 금요일에 출고되지 않습니다_토요일 수령X)<br>
+                            - 군부대는 부대 특성상 배송이 지연 되기 때문에 냉동식품 주문이 불가합니다.
+                        </td>
+                    </tr>
+                </table>
             </div>
-        </div>
-         
-        <div id="inquiry">
-            <ul class="detail_tap">
-                <li><a href="#detail">상품정보</a></li>
-                <li><a href="#gide">구매가이드</a></li>
-                <li><a href="#item_review">상품후기</a></li>
-                <li><a href="#inquiry">상품문의</a></li>
-            </ul>
-               <table>
-                   <caption>총 <span style="color:#4b0082;">5건</span>의 글이 있습니다.</caption>
-                   <colgroup>
-                       <col style="width:10px;">
-                       <col style="width:400px;">
-                       <col style="width:40px;">
-                       <col style="width:40px;">
-                       <col style="width:40px;">
-                   </colgroup>
-                   <tr>
-                       <th>NO.</th>
-                       <th>제목</th>
-                       <th>닉네임</th>
-                       <th>작성일</th>
-                       <th>상태</th>
-                   </tr>
-                   <tr>
-                       <td>5</td>
-                       <td style="text-align: left;">&emsp;야식 곤약면 문의드립니다.</td>
-                       <td>매직***</td>
-                       <td>2020.12.21</td>
-                       <td>답변완료</td>
-                   </tr>
-                   <tr>
-                       <td>4</td>
-                       <td style="text-align: left;">&emsp;야식 곤약면 문의드립니다.</td>
-                       <td>매직***</td>
-                       <td>2020.12.21</td>
-                       <td>답변완료</td>
-                   </tr>
-                   <tr>
-                       <td>3</td>
-                       <td style="text-align: left;">&emsp;야식 곤약면 문의드립니다.</td>
-                       <td>매직***</td>
-                       <td>2020.12.21</td>
-                       <td>답변완료</td>
-                   </tr>
-                   <tr>
-                       <td>2</td>
-                       <td style="text-align: left;">&emsp;야식 곤약면 문의드립니다.</td>
-                       <td>매직***</td>
-                       <td>2020.12.21</td>
-                       <td>답변완료</td>
-                   </tr>
-                   <tr>
-                       <td>1</td>
-                       <td style="text-align: left;">&emsp;야식 곤약면 문의드립니다.</td>
-                       <td>매직***</td>
-                       <td>2020.12.21</td>
-                       <td>답변완료</td>
-                   </tr>
-               </table>
-               <button>WRITELIST</button>
-               <button>LIST</button>
-        </div>
-    </main>
-    
-        <footer>
-        <div id="footer_nav">
-            <div id="footer_navbox">
-                <ul>
-                    <li><a href="#">처음으로</a></li>
-                    <li>|</li>
-                    <li><a href="#">쇼핑몰 이용안내</a></li>
-                    <li>|</li>
-                    <li><a href="#">쇼핑몰 이용약관</a></li>
-                    <li>|</li>
-                    <li><a href="#">개인정보처리방침</a></li>
-                </ul>
-            </div>
-        </div>
 
-        <div id="bottom">
-            <div id="cutomer">
-                <h3>CUSTOMER CENTER</h3>
-                <h5>070-7777-7777</h5>
-                <div id="cutomer_text">
-                    <span>업무시간 : 10:00 ~ 18:00 (점심시간 12:00 ~ 14:00)<br>
-                        -택배마감시간 : 15시(입금완료기준)<br>
-                        ※ 배송준비중으로 변경 시, 냉동식품은 취소/환불/교환 불가<br>
-                        - 토요일, 일요일, 공휴일 휴무<br>
-                        ※ 통화량이 많을때는 Q＆A 또는 카카오톡으로 문의주세요.<br>(하단 버튼 클릭)<br><br></span>
-                    <button>게시판 문의</button>
-                    <button>카카오톡 문의</button>
+            <div id="item_review">
+                <ul class="detail_tap">
+                    <li><a href="#detail">상품정보</a></li>
+                    <li><a href="#gide">구매가이드</a></li>
+                    <li><a href="#item_review">상품후기</a></li>
+                    <li><a href="#inquiry">상품문의</a></li>
+                </ul>
+                <div id="reviewbox">
+                    <table>
+                        <tr>
+                            <td>등록된 리뷰가 아직 없습니다.</td>
+                        </tr>
+                    </table>
+                    <textarea rows="5" cols="50"></textarea>
+                    <button><i class="fas fa-camera-retro"> + 사진추가</i></button>
+                    <select class="star">
+                        <option>아주 좋아요</option>
+                    </select>
+                    <button><i class="fas fa-check-circle"> 리뷰 등록하기</i></button>
                 </div>
             </div>
 
-            <div id="bank">
-                <h3>BANK INFO</h3>
-                <h5>1004-509-123456</h5>
-                <span>XX은행 - 예금주 : 푸드스토어<br>
-                    <select name="bank_info" class="bank_info">
-                        <option>인터넷 뱅킹 바로가기</option>
-                        <option>국민은행</option>
-                        <option>농협</option>
-                        <option>신한은행</option>
-                        <option>카카오은행</option>
-                        <option>우리은행</option>
-                        <option>기업은행</option>
-                    </select><br><br>
-                    <i class="fas fa-undo-alt"> 반품 주소지</i><br>
-                    * 상온제품 : 경기도 수원시 권선구<br>
-                    * 냉동제품 : 경기도 수원시 권선구<br><br></span>
-                <button>배송조회하기</button>
-                <button>교환·반품 신청</button>
+            <div id="inquiry">
+                <ul class="detail_tap">
+                    <li><a href="#detail">상품정보</a></li>
+                    <li><a href="#gide">구매가이드</a></li>
+                    <li><a href="#item_review">상품후기</a></li>
+                    <li><a href="#inquiry">상품문의</a></li>
+                </ul>
+                <table>
+                    <caption>총 <span style="color:#4b0082;">5건</span>의 글이 있습니다.</caption>
+                    <colgroup>
+                        <col style="width:10px;">
+                        <col style="width:400px;">
+                        <col style="width:40px;">
+                        <col style="width:40px;">
+                        <col style="width:40px;">
+                    </colgroup>
+                    <tr>
+                        <th>NO.</th>
+                        <th>제목</th>
+                        <th>닉네임</th>
+                        <th>작성일</th>
+                        <th>상태</th>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td style="text-align: left;">&emsp;야식 곤약면 문의드립니다.</td>
+                        <td>매직***</td>
+                        <td>2020.12.21</td>
+                        <td>답변완료</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td style="text-align: left;">&emsp;야식 곤약면 문의드립니다.</td>
+                        <td>매직***</td>
+                        <td>2020.12.21</td>
+                        <td>답변완료</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td style="text-align: left;">&emsp;야식 곤약면 문의드립니다.</td>
+                        <td>매직***</td>
+                        <td>2020.12.21</td>
+                        <td>답변완료</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td style="text-align: left;">&emsp;야식 곤약면 문의드립니다.</td>
+                        <td>매직***</td>
+                        <td>2020.12.21</td>
+                        <td>답변완료</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td style="text-align: left;">&emsp;야식 곤약면 문의드립니다.</td>
+                        <td>매직***</td>
+                        <td>2020.12.21</td>
+                        <td>답변완료</td>
+                    </tr>
+                </table>
+                <button>WRITELIST</button>
+                <button>LIST</button>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer>
+            <div id="footer_nav">
+                <div id="footer_navbox">
+                    <ul>
+                        <li><a href="#">처음으로</a></li>
+                        <li>|</li>
+                        <li><a href="#">쇼핑몰 이용안내</a></li>
+                        <li>|</li>
+                        <li><a href="#">쇼핑몰 이용약관</a></li>
+                        <li>|</li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+                </div>
             </div>
 
-            <div id="quick">
-                <h3>QUICK MENU</h3>
-                <p>하단 퀵메뉴 아이콘을 클릭하면 필요한 페이지로 바로 이동 가능합니다.</p>
-                <a href>
-                    <ul>
-                        <li><i class="fas fa-microphone"></i><br>공지사항</li>
-                        <li><i class="fas fa-comment-dots"></i><br>F＆Q</li>
-                        <li><i class="fas fa-camera"></i><br>구매후기</li>
-                        <li><i class="fas fa-grin-stars"></i><br>회원혜택</li>
-                        <li><i class="fas fa-shopping-cart"></i><br>장바구니</li>
-                        <li><i class="fas fa-eye"></i><br>관심상품</li>
-                        <li><i class="fas fa-truck"></i><br>배송조회</li>
-                        <li><i class="fas fa-heart"></i><br>즐겨찾기</li>
-                    </ul>
-                </a>
+            <div id="bottom">
+                <div id="cutomer">
+                    <h3>CUSTOMER CENTER</h3>
+                    <h5>070-7777-7777</h5>
+                    <div id="cutomer_text">
+                        <span>업무시간 : 10:00 ~ 18:00 (점심시간 12:00 ~ 14:00)<br>
+                            -택배마감시간 : 15시(입금완료기준)<br>
+                            ※ 배송준비중으로 변경 시, 냉동식품은 취소/환불/교환 불가<br>
+                            - 토요일, 일요일, 공휴일 휴무<br>
+                            ※ 통화량이 많을때는 Q＆A 또는 카카오톡으로 문의주세요.<br>(하단 버튼 클릭)<br><br></span>
+                        <button>게시판 문의</button>
+                        <button>카카오톡 문의</button>
+                    </div>
+                </div>
+
+                <div id="bank">
+                    <h3>BANK INFO</h3>
+                    <h5>1004-509-123456</h5>
+                    <span>XX은행 - 예금주 : 푸드스토어<br>
+                        <select name="bank_info" class="bank_info">
+                            <option>인터넷 뱅킹 바로가기</option>
+                            <option>국민은행</option>
+                            <option>농협</option>
+                            <option>신한은행</option>
+                            <option>카카오은행</option>
+                            <option>우리은행</option>
+                            <option>기업은행</option>
+                        </select><br><br>
+                        <i class="fas fa-undo-alt"> 반품 주소지</i><br>
+                        * 상온제품 : 경기도 수원시 권선구<br>
+                        * 냉동제품 : 경기도 수원시 권선구<br><br></span>
+                    <button>배송조회하기</button>
+                    <button>교환·반품 신청</button>
+                </div>
+
+                <div id="quick">
+                    <h3>QUICK MENU</h3>
+                    <p>하단 퀵메뉴 아이콘을 클릭하면 필요한 페이지로 바로 이동 가능합니다.</p>
+                    <a href>
+                        <ul>
+                            <li><i class="fas fa-microphone"></i><br>공지사항</li>
+                            <li><i class="fas fa-comment-dots"></i><br>F＆Q</li>
+                            <li><i class="fas fa-camera"></i><br>구매후기</li>
+                            <li><i class="fas fa-grin-stars"></i><br>회원혜택</li>
+                            <li><i class="fas fa-shopping-cart"></i><br>장바구니</li>
+                            <li><i class="fas fa-eye"></i><br>관심상품</li>
+                            <li><i class="fas fa-truck"></i><br>배송조회</li>
+                            <li><i class="fas fa-heart"></i><br>즐겨찾기</li>
+                        </ul>
+                    </a>
+                </div>
             </div>
-        </div>
-        
-        <div id="footer_end">
-            <div class="footer_iconbox">
-                <a href="#"><i class="fab fa-facebook-square"></i></a>
-                <a href="#"><i class="fab fa-instagram-square"></i></a>
-                <a href="#"><i class="fab fa-twitter-square"></i></a>
-                <a href="#"><i class="fas fa-envelope-square"></i></a>
-                <span>design by. Han A Reum 1988_reddoll88@naver.com</span>
+
+            <div id="footer_end">
+                <div class="footer_iconbox">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-instagram-square"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="fas fa-envelope-square"></i></a>
+                    <span>design by. Han A Reum 1988_reddoll88@naver.com</span>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
+
+    <script>
+        $(function () {
+            $("#menuicon").click(function () {
+                $(".topmenu2").slideToggle();
+            });
+        });
+
+        $(window).resize(function () {
+            if (window.innerWidth <= 768) {
+                $('.topmenu').show();
+            }
+        });
+    </script>
 </body>
 
 </html>

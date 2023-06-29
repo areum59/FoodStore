@@ -52,37 +52,47 @@ a {
 }
 
 
-/* GmarketSans (https://corp.gmarket.com/fonts/) */
 @font-face {
-    font-family: 'GmarketSans';
+    font-family: 'NanumSquare';
     font-weight: 300;
     font-style: normal;
-    src: url(../font/GmarketSansLight.eot);
-    src: url(../font/GmarketSansLight.eot?#iefix) format('embedded-opentype'),
-         url(../font/GmarketSansLight.woff2) format('woff2'),
-         url(../font/GmarketSansLight.woff) format('woff'),
-         url(../font/GmarketSansLight.ttf) format("truetype");
+    src: url('/static/assets/font/NanumSquare-Light.eot');
+    src: url('/static/assets/font/NanumSquare-Light.eot?#iefix') format('embedded-opentype'),
+         url('/static/assets/font/NanumSquare-Light.woff2') format('woff2'),
+         url('/static/assets/font/NanumSquare-Light.woff') format('woff'),
+         url('/static/assets/font/NanumSquare-Light.ttf') format("truetype");
     font-display: swap;
 } 
 @font-face {
-    font-family: 'GmarketSans';
-    font-weight: 500;
+    font-family: 'NanumSquare';
+    font-weight: 400;
     font-style: normal;
-    src: url(../font/GmarketSansMedium.eot);
-    src: url(../font/GmarketSansMedium.eot?#iefix) format('embedded-opentype'),
-         url(../font/GmarketSansMedium.woff2) format('woff2'),
-         url(../font/GmarketSansMedium.woff) format('woff'),
-         url(../font/GmarketSansMedium.ttf) format("truetype");
+    src: url('/static/assets/font/NanumSquare-Regular.eot');
+    src: url('/static/assets/font/NanumSquare-Regular.eot?#iefix') format('embedded-opentype'),
+         url('/static/assets/font/NanumSquare-Regular.woff2') format('woff2'),
+         url('/static/assets/font/NanumSquare-Regular.woff') format('woff'),
+         url('/static/assets/font/NanumSquare-Regular.ttf') format("truetype");
     font-display: swap;
 } 
 @font-face {
-    font-family: 'GmarketSans';
+    font-family: 'NanumSquare';
     font-weight: 700;
     font-style: normal;
-    src: url(../font/GmarketSansBold.eot);
-    src: url(../font/GmarketSansBold.eot?#iefix) format('embedded-opentype'),
-         url(../font/GmarketSansBold.woff2) format('woff2'),
-         url(../font/GmarketSansBold.woff) format('woff'),
-         url(../font/GmarketSansBold.ttf) format("truetype");
+    src: url('/static/assets/font/NanumSquare-Bold.eot');
+    src: url('/static/assets/font/NanumSquare-Bold.eot?#iefix') format('embedded-opentype'),
+         url('/static/assets/font/NanumSquare-Bold.woff2') format('woff2'),
+         url('/static/assets/font/NanumSquare-Bold.woff') format('woff'),
+         url('/static/assets/font/NanumSquare-Bold.ttf') format("truetype");
     font-display: swap;
 } 
+@font-face {
+    font-family: 'NanumSquare';
+    font-weight: 800;
+    font-style: normal;
+    src: url('/static/assets/font/NanumSquare-ExtraBold.eot');
+    src: url('/static/assets/font/NanumSquare-ExtraBold.eot?#iefix') format('embedded-opentype'),
+         url('/static/assets/font/NanumSquare-ExtraBold.woff2') format('woff2'),
+         url('/static/assets/font/NanumSquare-ExtraBold.woff') format('woff'),
+         url('/static/assets/font/NanumSquare-ExtraBold.ttf') format("truetype");
+    font-display: swap;
+}
