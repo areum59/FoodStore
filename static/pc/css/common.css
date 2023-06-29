@@ -6,31 +6,67 @@
 * {font-family: 'NanumSquare'; box-sizing: border-box;}
 .wrap {width: 100%; min-width: 1200px; overflow: hidden;}
 
-header {width:100%; height: 250px; margin:0 auto; box-shadow:2px 2px 2px #ddd;}       
-header h5 {width:100%; height: 45px; margin:0 auto; background-color:#4b0082; color: white; font-size: 14px;  text-align: center; padding: 13px 0 0 0;}
-header span {display: inline-block; color: yellow; font-weight: 1000;}
 
-header #login {width:100%; height: 20px;}
-header #login ul {font-size: 8.5pt; color:#0c090a; width:1100px; height:20px; margin:15px auto; }
-header #login ul li {float:right; margin:0 3px;}
-header #login ul li a {color:dimgray;}
-header #login ul li a:hover {color:#ddd;}  
+/* header */
+header {width:100%; height: 245px; margin:0 auto; box-shadow: 2px 2px 2px #ddd;}
+header .inner {width: 1200px; margin: 0 auto;}
 
-#top {width:1100px; height:160px; margin:0 auto;}
-#top img {width:200px; height:120px; display:block; margin:0 auto;}
-header > #top > nav {width:70%; height:30px; margin:15px 0 0 0px;}
-header > #top > nav > ul {color:#292929;}
-header > #top > nav > ul > li {font-size:17px; float:left; font-weight: bold; margin:0 40px 0 0;}
-header > #top > nav > ul > li > a {color:#292929;}
-header > #top > nav > ul > li > a:hover {color:#4b0082;}
+header .top-bnr {display: block; width: 100%; height: 45px; background-color:#4b0082;}
+header .top-bnr .txt-box {width: 1200px; margin: 0 auto; text-align: center;}
+header .top-bnr .txt-box h5 {font-size: 15px; font-weight: 400; line-height: 45px; color: white;}
+header .top-bnr .txt-box h5 > span {color: yellow; font-weight: 800;}
 
-.search {float:right; width:250px; height:40px; padding:3px; margin-top:6px;}
-.search > button {border:0; width: 30px; height:30px; border-radius:50px; margin:0 0 0 5px; color:#ddd;}
-.search > button i {color:#666;}
+header .login {width: 100%; display: flex; justify-content: flex-end; margin-top: 10px;}
+header .login > li:not(:last-child)::after {content: '\2503'; font-size: 10px; color: #999; margin: 0 6px;}
+header .login > li > a {font-size: 12px; font-weight: 400; color: #666; transition: all 0.3s;}
+header .login > li > a:hover {color:#4b0082;}
 
-input{width:200px; height:30px; float:left; font-size:13px; padding:5px 0 5px 10px; border-radius:50px; border:1.5px solid #ddd;}
+header .middle {width: 100%; height: 100px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;}
+header .middle .sns > li {display: inline-block; margin-right: 8px; cursor: pointer;}
+header .middle .sns > li i {font-size: 22px;}
 
-footer {width:100%; margin:0 auto;}
+header .middle .logo {display: block; width: 140px; overflow: hidden; text-align: center;}
+header .middle .logo > img {width: 100%; object-fit: contain;}
+header .middle .logo .slogan {font-size: 14px; font-weight: 400; color: #666;}
+
+header .middle .utill > li {display: inline-block; margin-left: 8px; cursor: pointer;}
+header .middle .utill > li i {font-size: 21px;}
+
+/* GNB */
+header nav {width:100%; height: 60px; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; position: relative;}
+header nav .gnb {width: 1200px; height: 100%; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;}
+header nav .gnb .menu {width: 100%;}
+header nav .gnb .menu li {display: inline-block; margin-right: 26px; line-height: 60px;}
+header nav .gnb .menu li:first-child {width: 160px; text-align: center; border-left: 1px solid #ddd; border-right: 1px solid #ddd;}
+header nav .gnb .menu li a {font-size: 17px; font-weight: 700;}
+
+header nav .gnb .menu .all-ctgy i {font-size: 16px;}
+header nav .gnb .menu .all-ctgy a {color: #4b0082;}
+
+header nav .lnb {display: none; width: 100%; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; background-color: white; position: absolute;}
+header nav .lnb .inner {width: 1200px; margin: 0 auto;}
+
+header nav .lnb .inner .depth2 {float: left; width: 160px; padding: 20px 0;}
+header nav .lnb .inner .depth2::after {content: ''; display: block; clear: both;}
+
+header nav .lnb .inner .depth2 > li {line-height: 2; text-align: center; text-align: left;}
+
+header nav .lnb .inner .depth2 li a {font-size: 14px; font-weight: 400;}
+header nav .lnb .inner .depth2 li a:hover {color: #666;}
+
+header nav .lnb .inner .depth2 > li.subject {font-size: 16px; font-weight: 700; color: #4b0082;}
+
+/* 검색 박스 */
+header nav .search-box {position: absolute; top: 59px; width: 100%; background-color: rgb(0,0,0,0.8); padding: 2% 0; display: none;}
+header nav .search-box .inner {width: 960px; margin: 0 auto; display: flex; flex-flow: row wrap; justify-content: space-between; align-content: center;}
+header nav .search-box .inner input {width: 80%; height: 50px; margin: 0; background-color: rgb(255,255,255,0); border: 2px solid #fff;}
+header nav .search-box .inner button {width: 20%; height: 50px; margin: 0; border:none; font-size: 0.9em; color: #666; cursor: pointer;}
+header nav .search-box .inner p {color:white; width: 100%; margin: 0 auto; padding: 2% 0; text-align: left;}
+header nav .search-box .inner .care_btn {width: 32%; height: 40px; margin: 0; background-color: white; font-size: 0.9em; color: #666; border: 2px solid white; display: flex; justify-content: center; align-items: center; transition: all 0.3s;}
+header nav .search-box .inner .care_btn:hover {background-color: rgb(255,255,255,0); color:white; border: 2px solid white;}
+
+
+/* footer {width:100%; margin:0 auto;}
 footer > #footer_nav {width:100%; height: 35px; margin:0 auto; border-top:1px solid #ddd; border-bottom:1px solid #ddd;}
 footer > #footer_nav #footer_navbox {width:1100px; height: 35px;}
 footer > #footer_nav #footer_navbox ul,li {float: left; margin:5px 15px 0 0; font-size: 13px; color:#666;}
@@ -63,4 +99,4 @@ footer #bottom #quick li i {font-size:20px; color:#999; line-height:2; margin-to
 footer > #footer_end {width:100%; height: 40px; margin:35px auto 0; background-color: #4b0082;}
 footer > #footer_end .footer_iconbox {width:1100px; height: 35px; margin:0 auto;}
 footer > #footer_end .footer_iconbox span {color:white; font-size: 11px; float: right; margin-top: 14px;}
-footer > #footer_end .footer_iconbox i {color:white; font-size: 21px; margin:10px 5px 0 0;}
+footer > #footer_end .footer_iconbox i {color:white; font-size: 21px; margin:10px 5px 0 0;} */
