@@ -1,37 +1,132 @@
 <header>
-    <a href="#">
-        <h5>지금 가입하고 인기상품 <span>1000point</span> 받아가세요!</h5>
-    </a>
-    <div id="login">
-        <ul>
-            <li><a href="#">회원가입</a></li>
-            <li>|</li>
-            <li><a href="#">로그인</a></li>
-            <li>|</li>
-            <li><a href="#">고객센터</a></li>
-            <li>|</li>
-            <li><a href="#">배송지역 검색</a></li>
-        </ul>
-    </div>
+    <a href="#" class="top-bnr">
+        <div class="txt-box">
+            <h5>지금 가입하고 인기상품 <span>1000point</span> 받아가세요!</h5>
 
-    <div id="top">
-        <a href="main.html" target="_self"><img src="img/logo.jpg" alt="logo"></a>
-
-        <div class="search">
-            <input name="search" placeholder="한 스푼 샐러드">
-            <button type="submit"><i class="fas fa-search"></i></button>
+            <div class="today-close"></div>
         </div>
 
-        <nav>
-            <ul>
-                <li><a href="main.html" target="_self">전체 카테고리</a></li>
-                <li><a href="main.html" target="_self">BEST</a></li>
-                <li><a href="main.html" target="_self">HOT DEAL</a></li>
-                <li><a href="main.html" target="_self">신상품</a></li>
-                <li><a href="main.html" target="_self">간편식</a></li>
-                <li><a href="main.html" target="_self">식단플랜</a></li>
-                <li><a href="main.html" target="_self">EVENT</a></li>
+    </a>
+
+    <div class="inner">
+        <ul class="login">
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">배송지역 검색</a></li>
+        </ul>
+
+        <div class="middle">
+            <ul class="sns">
+                <li><i class="fa-regular fa-star favorites"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
             </ul>
-        </nav>
+
+            <a href="/views/main/index.html" class="logo">
+                <img src="/static/pc/img/common/logo_color.png" alt="logo">
+                <span class="slogan">맛있고 건강한 다이어트</span>
+            </a>
+
+            <ul class="utill">
+                <li><i class="fa-regular fa-user"></i></li>
+                <li><i class="fa-regular fa-heart"></i></li>
+                <li><i class="fa-solid fa-basket-shopping"></i></li>
+                <li><i class="fa-solid fa-magnifying-glass search-btn"></i></li>
+            </ul>
+        </div>
     </div>
+    
+    <nav>
+        <div class="gnb">
+            <ul class="menu">
+                <li class="all-ctgy">
+                    <a href="javascript:void(0);"><i class="fa-solid fa-bars"></i>&ensp;전체 카테고리</a>
+                </li>
+                <li>
+                    <a href="/views/prod/view.html">샐러드</a>
+                </li>
+                <li>
+                    <a href="/views/prod/view.html">도시락</a>
+                </li>
+                <li>
+                    <a href="/views/prod/view.html">저칼로리간식</a>
+                </li>
+                <li>
+                    <a href="/views/prod/view.html">케어별프로그램</a>
+                </li>
+                <li>
+                    <a href="/views/prod/view.html">EVENT</a>
+                </li>
+                <li>
+                    <a href="/views/prod/view.html">COMMUNITY</a>
+                    <!-- <ul class="depth2">
+                        <li class="subject">고객센터</li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">구매후기</a></li>
+                        <li><a href="#">회원혜택</a></li>
+                        <li><a href="#">미확인 입금자</a></li>
+                    </ul> -->
+                </li>
+                <li>
+                    <a href="/views/prod/view.html">FOOD STORE</a>
+                    <!-- <ul class="depth2">
+                        <li class="subject"></li>
+                        <li><a href="#">브랜드 소개</a></li>
+                        <li><a href="#">케어별 관리법</a></li>
+                    </ul> -->
+                </li>
+            </ul>
+        </div>
+
+        <!-- LNB -->
+        <div class="lnb">
+            <div class="inner">
+                <ul class="depth2">
+                    <li><a href="#">한스푼 샐러드</a></li>
+                    <li><a href="#">하루 한끼 샐러드</a></li>
+                    <li><a href="#">닭가슴살 샐러드</a></li>
+                    <li><a href="#">그린주스</a></li>
+                    <li><a href="#">4주 정기배송</a></li>
+                </ul>
+                <ul class="depth2">
+                    <li><a href="#">리셋 도시락</a></li>
+                    <li><a href="#">곤약밥상</a></li>
+                    <li><a href="#">오늘은 현미밥</a></li>
+                    <li><a href="#">저칼로리 콜리컵밥</a></li>
+                    <li><a href="#">도시락 세트</a></li>
+                </ul>
+                <ul class="depth2">
+                    <li><a href="#">곤약 분식/야식</a></li>
+                    <li><a href="#">빵/떡</a></li>
+                    <li><a href="#">닭가슴살 어묵바</a></li>
+                    <li><a href="#">고구마/계란</a></li>
+                    <li><a href="#">두유/견과류</a></li>
+                </ul>
+                <ul class="depth2">
+                    <li><a href="#">1케어 프로그램</a></li>
+                    <li><a href="#">2케어 프로그램</a></li>
+                    <li><a href="#">3케어 프로그램</a></li>
+                </ul>
+                <ul class="depth2">
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">멤버십 혜택</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 검색 박스 -->
+        <div class="search-box">
+            <div class="inner">
+                <input type="search">
+                <button>검색하기</button>
+                <p>푸드스토어 3단계 프로그램</p>
+                <a href="#" class="care_btn">깨끗하게 비우는 1단계</a>
+                <a href="#" class="care_btn">건강하게 비우는 2단계</a>
+                <a href="#" class="care_btn">슬림하게 유지하는 3단계</a>
+            </div>
+        </div>
+    </nav>
 </header>
